@@ -1,0 +1,123 @@
+#version 330
+
+
+uniform vec3 Matambient;
+uniform vec3 Matdiffuse;
+uniform vec3 Matspecular;
+uniform float Matshininess;
+
+
+in vec3 pos_eye, normal_eye;
+in vec2 TexCoord;
+
+in vec3 skyCoords;
+uniform mat4 view;
+uniform float light_x;
+uniform float light_z;
+
+// fixed point light properties
+vec3 light_pos_world = vec3 (light_x, 24.0, light_z);
+vec3 Ls = vec3 (1.0, 1.0, 1.0); // white specular colour
+vec3 Ld = vec3 (1.0,0.9,0.5); // orange hue diffuse light colour
+vec3 La = vec3 (0.3, 0.3, 0.3); // grey ambient colour
+
+// surface reflectance
+vec3 Ks = vec3 (1.0, 1.0, 1.0); // fully reflect specular light
+vec3 Kd = vec3 (1.0, 1.0, 1.0); // white diffuse surface reflectance
+vec3 Ka = vec3 (1.0, 1.0, 1.0); // fully reflect ambient light
+float specular_exponent = 10.0; // specular 'power'
+
+out vec4 fragment_colour; // final colour of surface
+
+uniform sampler2D toptree;
+uniform sampler2D bottomtree;
+uniform sampler2D ground;
+uniform sampler2D fence;
+uniform sampler2D spiderbody;
+uniform sampler2D spiderleg;
+uniform sampler2D mothbody;
+uniform sampler2D mothwing;
+uniform sampler2D lamp;
+uniform sampler2D lampglass;
+uniform sampler2D bugeyes;
+uniform sampler2D rock;
+uniform sampler2D box;
+
+uniform samplerCube skybox;
+
+uniform bool sky;
+
+uniform int texNum;
+
+//fog variables
+const vec4 colour = vec4(0.207,0.211,0.372,1.0);
+in float visible;
+
+void main(){
+
+	// ambient intensity
+	vec3 Ia = La  *Matambient;
+
+	// diffuse intensity 
+	// raise light position to eye space
+	vec3 light_pos_eye = vec3 (view * vec4(light_pos_world, 1.0));
+	vec3 distance_to_light_eye = light_pos_eye - pos_eye;
+	vec3 direction_to_light_eye = normalize (distance_to_light_eye);
+	float dot_prod = dot (direction_to_light_eye, normal_eye);
+	dot_prod = max (dot_prod, 0.0);
+	vec3 Id = Ld * Matdiffuse * dot_prod ; // final diffuse intensity
+
+	// specular intensity
+	vec3 reflection_eye = reflect (-direction_to_light_eye, normal_eye);
+	vec3 surface_to_viewer_eye = normalize (-pos_eye);
+	float dot_prod_specular = dot (reflection_eye, surface_to_viewer_eye);
+	dot_prod_specular = max (dot_prod_specular, 0.0);
+	float specular_factor = pow (dot_prod_specular, Matshininess);
+	vec3 Is = Ls  * Matspecular * specular_factor; // final specular intensity		
+
+	vec4 tex = texture(toptree, TexCoord);
+	if(texNum == 0) {
+		tex = texture(toptree, TexCoord);
+	}
+	else if(texNum == 1) {
+		tex = texture(bottomtree, TexCoord);
+	}
+	else if(texNum == 2) {
+		tex = texture(ground, TexCoord);
+	}
+	else if(texNum == 3) {
+		tex = texture(fence, TexCoord);
+	}
+	else if(texNum == 4) {
+		tex = texture(spiderbody, TexCoord);
+	}
+	else if(texNum == 5) {
+		tex = texture(spiderleg, TexCoord);
+	}
+	else if(texNum == 6) {
+		tex = texture(mothbody, TexCoord);
+	}
+	else if(texNum == 7) {
+		tex = texture(mothwing, TexCoord);
+	}
+	else if(texNum == 8) {
+		tex = texture(lamp, TexCoord);
+	}
+	else if(texNum == 9) {
+		tex = texture(lampglass, TexCoord);
+	}
+	else if(texNum == 10) {
+		tex = texture(bugeyes, TexCoord);
+	}
+	else if(texNum == 11) {
+		tex = texture(rock, TexCoord);
+	}
+	else if(texNum == 12) {
+		tex = texture(box, TexCoord);
+	}
+	
+	//gl_FragColor = vec4 (LightIntensity, 1.0);
+	gl_FragColor =  vec4(Is+Id+Ia, 1.0) *tex;
+	gl_FragColor = mix(colour, gl_FragColor, visible);
+
+}

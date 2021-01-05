@@ -1,0 +1,40 @@
+﻿  main.cpp
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(451): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(456): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(462): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(469): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(475): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(481): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(487): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(494): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(500): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(506): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(512): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(520): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(527): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(533): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(539): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(547): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(553): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(559): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(565): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(573): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(579): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(585): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(591): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(599): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(605): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(611): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(617): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(625): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(631): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(637): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(643): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(651): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(657): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(663): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(669): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+  maths_funcs.cpp
+main.obj : error LNK2001: unresolved external symbol aiImportFile
+main.obj : error LNK2001: unresolved external symbol aiReleaseImport
+C:\Users\Alex\source\repos\ComputerGraphicsAssignment\x64\Release\ComputerGraphicsAssignment.exe : fatal error LNK1120: 2 unresolved externals

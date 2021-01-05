@@ -1,0 +1,11 @@
+﻿  main.cpp
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(29): warning C4005: 'PLANES': macro redefinition
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\um\wingdi.h(2003): note: see previous definition of 'PLANES'
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(639): warning C4018: '<': signed/unsigned mismatch
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(841): warning C4805: '==': unsafe mix of type 'boolean' and type 'bool' in operation
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(1520): warning C4805: '==': unsafe mix of type 'boolean' and type 'bool' in operation
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(1534): warning C4805: '==': unsafe mix of type 'boolean' and type 'bool' in operation
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(1546): warning C4805: '==': unsafe mix of type 'boolean' and type 'bool' in operation
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(1566): warning C4805: '==': unsafe mix of type 'boolean' and type 'bool' in operation
+c:\users\alex\source\repos\computergraphicsassignment\computergraphicsassignment\main.cpp(2001): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  ComputerGraphicsAssignment.vcxproj -> C:\Users\Alex\source\repos\ComputerGraphicsAssignment\Debug\ComputerGraphicsAssignment.exe

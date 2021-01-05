@@ -1,0 +1,32 @@
+#version 330
+
+in vec3 vertex_position;
+in vec3 vertex_normal;
+in vec2 vertex_texture;
+
+out vec3 pos_eye, normal_eye;
+out vec2 TexCoord;
+
+out float visible;
+
+
+
+uniform mat4 view;
+uniform mat4 proj;
+uniform mat4 model;
+
+const float dense = 0.005;
+const float gradient = 1.7;
+
+void main(){
+  TexCoord = vertex_texture;
+  pos_eye = vec3 (view * model * vec4 (vertex_position, 1.0));
+  vec4 positionRelative = view * vec4 (pos_eye, 1.0);
+  normal_eye = vec3 (view * model * vec4 (vertex_normal, 0.0));
+  gl_Position = proj * vec4 (pos_eye, 1.0);
+
+
+  float distance = length(positionRelative.xyz);
+  visible = exp(-pow((distance*dense), gradient));
+  visible = clamp(visible, 0.0, 1.0);
+}
